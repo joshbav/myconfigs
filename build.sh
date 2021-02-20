@@ -1,0 +1,22 @@
+#!/bin/bash
+echo
+echo Creating encrypted backup of VS Code settings, enter password
+mv vscode.7z /tmp 2>&1
+7z a -t7z -p vscode ~/.vscode/settings.json -r
+
+cp ~/.bash_profile .
+cp ~/.vimrc .
+
+#echo Now doing SSH config, but I stopped using this file a while ago
+#echo enter password if asked
+#7z a -t7z -p sshconfig ~/.ssh/config
+
+# TODO iterm config file
+# zoom config file?
+# git config encrypted though?
+
+# This is just to update git
+git config user.name “joshbav” 
+git add -A
+git commit -m "Scripted commit $(date +%d-%b-%Y-%I:%M:%S%p)"
+git push -u origin master
