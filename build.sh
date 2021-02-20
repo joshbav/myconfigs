@@ -15,6 +15,9 @@ cp ~/.vimrc .
 # zoom config file?
 # git config encrypted though?
 
+# don't need kubeconfig backed up using this method, because I won't curl it
+# to a new workstation, right?
+
 # This is just to update git
 git config user.name “joshbav” 
 git add -A
