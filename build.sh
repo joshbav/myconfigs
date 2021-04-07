@@ -1,4 +1,10 @@
 #!/bin/bash
+
+# Backups up some of my ~/. files
+
+# TODO: Fork what this guy did: https://github.com/SuperPaintman/dotfiles
+
+
 echo
 echo Creating encrypted backup of VS Code settings, enter password
 mv vscode.7z /tmp 2>&1
@@ -16,7 +22,7 @@ cp ~/.vimrc .
 # git config encrypted though?
 
 # don't need kubeconfig backed up using this method, because I won't curl it
-# to a new workstation, right?
+# to a new workstation, right?  same with cloud provider CLIs?
 
 # This is just to update git
 git config user.name “joshbav” 
