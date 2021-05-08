@@ -1,1 +1,1 @@
-alias s='sudo systemctl' j='journalctl' k='kubectl' 
+alias s='sudo systemctl' j='journalctl' k='kubectl' ls='ls -ltrGFha'
