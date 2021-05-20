@@ -2,7 +2,7 @@
 
 # Backups up some of my ~/. files
 
-# TODO: Fork what this guy did: https://github.com/SuperPaintman/dotfiles
+# TODO: Fork what they did: https://github.com/SuperPaintman/dotfiles
 
 
 echo
@@ -12,6 +12,8 @@ mv vscode.7z /tmp 2>&1
 
 cp ~/.bash_profile .
 cp ~/.vimrc .
+cp ~/.bash_aliases .
+cp ~/.bashrc .
 
 #echo Now doing SSH config, but I stopped using this file a while ago
 #echo enter password if asked
@@ -25,7 +27,7 @@ cp ~/.vimrc .
 # to a new workstation, right?  same with cloud provider CLIs?
 
 # This is just to update git
-git config user.name “joshbav” 
+git config user.name “joshbav”
 git add -A
 git commit -m "Scripted commit $(date +%d-%b-%Y-%I:%M:%S%p)"
 git push -u origin master
