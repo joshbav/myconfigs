@@ -26,8 +26,15 @@ cp ~/.bashrc .
 # don't need kubeconfig backed up using this method, because I won't curl it
 # to a new workstation, right?  same with cloud provider CLIs?
 
-# This is just to update git
-git config user.name “joshbav”
+
+echo
+echo
+echo Adding all files in repo and pushing to git
+
+
+# how I changed it to ssh:  git remote set-url origin git@github.com:joshbav/<repo name>.git
+git config user.name “joshbav” --local
+git config user.email "joshbav@users.noreply.github.com" --local
 git add -A
 git commit -m "Scripted commit $(date +%d-%b-%Y-%I:%M:%S%p)"
 git push -u origin master
