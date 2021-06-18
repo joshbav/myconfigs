@@ -11,4 +11,5 @@ set autoindent
 set smartindent
 set cindent
 set cinoptions=(0,u0,U0
-
+set mouse=
+set paste
